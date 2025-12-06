@@ -1,0 +1,65 @@
+/* VARIABLE AREA */
+
+:root {
+  --dark-primary : #1E173B;
+  --light-primary : #F8F3E7;
+}
+
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.questrial {
+  font-family: "Questrial", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* STYLE AREA */
+
+* {
+  /* border: 1px solid red !important; */
+  color : var(--dark-primary);
+}
+
+.application-container {
+  background-color: var(--light-primary);
+  max-width: 100vh !important;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-radius: 20px;
+}
+
+.img-header-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.header-logo-img {
+  height: 100px;
+
+  button {
+  width: 100%;
+  padding: 12px 0;
+  font-size: 1rem;
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  }
+
+  input[type="file"] {
+  width: 100%;
+  padding: 8px;
+  font-size: 0.9rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Challora Applicants Forms</title>
+
+  <!-- Style.css -->
+  <link rel="stylesheet" href="style.1.css">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Icon -->
+  <link rel="icon" href="Logo CHALLORA.png" type="image/png">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+</head>
+<body class="questrial">
+  <div class="application-container container p-5">
+    <div class="img-header-container mb-5">
+      <img class="header-logo-img" src="Logo CHALLORA .png" alt="Challora Logo">
+    </div>
+    <div class="h3 fw-semibold">Challora Application Form</div>
+    <p>Welcome Challora Applicants! Please input all the  data, and kindly wait 3 - 7 business days for our HR Department response. Good luck!</p>
+
+    <!-- Mulai Form -->
+    <form action="upload.php" method="POST" enctype="multipart/form-data">
+      <!-- Personal Info -->
+      <div class="h5 pb-2 fw-semibold">Personal Info</div>
+      <div class="row">
+        <div class="mb-3 col-6">
+          <label for="formName" class="form-label">Your Full Name</label>
+          <input class="form-control" type="text" id="formName" name="fullname" placeholder="Jane Doe" required>
+        </div>
+        <div class="mb-3 col">
+          <label for="formAddress" class="form-label">Your Address</label>
+          <input class="form-control" type="text" id="formAddress" name="address" required>
+        </div>
+      </div>
+      <div class="row">
+        <div class="mb-3 col-6">
+          <label for="formEmail" class="form-label">Your Email Address</label>
+          <input class="form-control" type="email" id="formEmail" name="email" placeholder="challora@gmail.com" required>
+        </div>
+        <div class="mb-3 col">
+          <label for="formPhone" class="form-label">Your Phone Number</label>
+          <input class="form-control" type="tel" id="formPhone" name="phone" placeholder="08xxxxxxxxxx" required>
+        </div>
+      </div>
+
+      <!-- Personal Documents -->
+      <div class="h5 pt-5 pb-2 fw-semibold">Personal Documents</div>
+      <div class="row">
+        <div class="mb-3 col-6">
+          <label for="formFileCv" class="form-label">Your Curriculum Vitae</label>
+          <input class="form-control" type="file" id="formFileCv" name="cv" required>
+        </div>
+        <div class="mb-3 col">
+          <label for="formFileApplicationLetter" class="form-label">Your Application Letter</label>
+          <input class="form-control" type="file" id="formFileApplicationLetter" name="application_letter" required>
+        </div>
+      </div>
+      <div class="row">
+        <div class="mb-3 col-6">
+          <label for="formFileResume" class="form-label">Your Resume</label>
+          <input class="form-control" type="file" id="formFileResume" name="resume" required>
+        </div>
+        <div class="mb-3 col">
+          <label for="formFileDegree" class="form-label">Latest Degree</label>
+          <input class="form-control" type="file" id="formFileDegree" name="degree" required>
+        </div>
+      </div>
+      <div class="row">
+        <div class="mb-3 col-6">
+          <label for="formFileCertificates" class="form-label">Supporting Certificates</label>
+          <input class="form-control" type="file" id="formFileCertificates" name="certificates" >
+        </div>
+      </div>
+
+      <!-- Applied Position -->
+      <div class="h5 pt-5 pb-2 fw-semibold">Applied Position</div>
+      <div class="row">
+        <div class="mb-3 col-6">
+          <label for="formPosition" class="form-label">Position You Apply For</label>
+          <input class="form-control" type="text" id="formPosition" name="position" placeholder="Software Engineer" required>
+        </div>
+      </div>
+
+      <!-- Submit -->
+      <div class="mt-4">
+        <button type="submit" class="btn btn-primary">Send File</button>
+      </div>
+    </form>
+    <!-- Akhir Form -->
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
