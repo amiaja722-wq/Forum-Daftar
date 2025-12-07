@@ -1,0 +1,93 @@
+/* VARIABLE AREA */
+:root {
+  --dark-primary: #2C2C54;
+  --light-primary: #ecf0f1;
+  --accent: #8E2DE2;
+  --accent-secondary: #FF6EC4;
+}
+
+
+/* FONT AREA */
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.questrial {
+  font-family: "Questrial", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  background-color: var(--dark-primary);
+  color: var(--light-primary);
+}
+
+/* STYLE AREA */
+* {
+  /* border: 1px solid red !important; */
+  color: var(--dark-primary);
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--dark-primary);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 40px;
+  color: var(--light-primary);
+}
+
+.application-container {
+  background-color: var(--light-primary);
+  max-width: 100vh !important;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+/* Header logo */
+.img-header-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.header-logo-img {
+  height: 100px;
+}
+
+/* Buttons */
+button {
+  width: 100%;
+  padding: 12px 0;
+  font-size: 1rem;
+  background-color: var(--dark-primary);
+  color: var(--light-primary);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+   box-shadow: 0 0 10px rgba(30, 23, 59, 0.4);
+
+}
+
+button:hover {
+  background-color: #2a1f5c; /* versi lebih terang dari dark-primary */
+}
+
+/* File input */
+input[type="file"] {
+  width: 100%;
+  padding: 8px;
+  font-size: 0.9rem;
+  border: 1px solid var(--dark-primary);
+  border-radius: 5px;
+  background-color: #fff;
+  color: var(--dark-primary);
+}
